@@ -1,0 +1,1099 @@
+{
+  "json": {
+    "colors": {
+      "disabledForeground": {
+        "carbon": "#45454a",
+        "deepforest": "#3b544d",
+        "graphene": "#545454",
+        "ocean": "#464b5d",
+        "palenight": "#676e95",
+        "teal": "#546e7a"
+      },
+      "disabledBorder": {
+        "carbon": "#45454a80",
+        "deepforest": "#3b544d80",
+        "graphene": "#54545480",
+        "ocean": "#464b5d80",
+        "palenight": "#676e9580",
+        "teal": "#546e7a80"
+      },
+      "disabledBackground": {
+        "carbon": "#45454a80",
+        "deepforest": "#3b544d80",
+        "graphene": "#54545480",
+        "ocean": "#464b5d80",
+        "palenight": "#676e9580",
+        "teal": "#546e7a80"
+      }
+    },
+    "ui_background": {
+      "carbon": {
+        "background": "#0a0a0a",
+        "foreground": "#d9d9d9",
+        "selectionBackground": "#47474780"
+      },
+      "deepforest": {
+        "background": "#111816",
+        "foreground": "#cae5d5",
+        "selectionBackground": "#4b725380"
+      },
+      "graphene": {
+        "background": "#212121",
+        "foreground": "#d9d9d9",
+        "selectionBackground": "#47474780"
+      },
+      "ocean": {
+        "background": "#0f111a",
+        "foreground": "#ced1e3",
+        "selectionBackground": "#51587b80"
+      },
+      "palenight": {
+        "background": "#292d3e",
+        "foreground": "#ced1e3",
+        "selectionBackground": "#555c8280"
+      },
+      "teal": {
+        "background": "#263238",
+        "foreground": "#d8dfdf",
+        "selectionBackground": "#2c545080"
+      }
+    }
+  },
+  "xml": {
+    "colors": {
+      "IMAGES_WHITE_CELL_COLOR": {
+        "carbon": "#212121",
+        "deepforest": "#2c3f39",
+        "graphene": "#424242",
+        "ocean": "#3b3f51",
+        "palenight": "#4e5579",
+        "teal": "#37474f"
+      },
+      "HTML_TAG_TREE_LEVEL4": {
+        "carbon": "#6a90d0",
+        "deepforest": "#6fa0de",
+        "graphene": "#82aaff",
+        "ocean": "#82aaff",
+        "palenight": "#82aaff",
+        "teal": "#82aaff"
+      },
+      "FILESTATUS_UNKNOWN": {
+        "carbon": "#7d5e49",
+        "deepforest": "#7b6e54",
+        "graphene": "#916b53",
+        "ocean": "#916b53",
+        "palenight": "#916b53",
+        "teal": "#916b53"
+      },
+      "DIAGRAM_COARSE_GRID": {
+        "carbon": "#212121b3",
+        "deepforest": "#2c3f39b3",
+        "graphene": "#424242b3",
+        "ocean": "#3b3f51b3",
+        "palenight": "#4e5579b3",
+        "teal": "#37474fb3"
+      },
+      "DIAGRAM_NODE_BORDER": {
+        "carbon": "#212121",
+        "deepforest": "#2c3f39",
+        "graphene": "#424242",
+        "ocean": "#3b3f51",
+        "palenight": "#4e5579",
+        "teal": "#37474f"
+      },
+      "BLOCK_TERMINAL_DEFAULT_FOREGROUND": {
+        "carbon": "#eeffff",
+        "deepforest": "#d9ffe3",
+        "graphene": "#eeffff",
+        "ocean": "#eeffff",
+        "palenight": "#eeffff",
+        "teal": "#eeffff"
+      },
+      "Bookmark.Mnemonic.iconBorderColor": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_CONFLICTS": {
+        "carbon": "#cd775c",
+        "deepforest": "#cc8868",
+        "graphene": "#f78c6c",
+        "ocean": "#f78c6c",
+        "palenight": "#f78c6c",
+        "teal": "#f78c6c"
+      },
+      "FILESTATUS_addedOutside": {
+        "carbon": "#a3c679",
+        "deepforest": "#c3e88d",
+        "graphene": "#c3e88d",
+        "ocean": "#c3e88d",
+        "palenight": "#c3e88d",
+        "teal": "#c3e88d"
+      },
+      "IMAGES_GRID_LINE_COLOR": {
+        "carbon": "#212121",
+        "deepforest": "#2c3f39",
+        "graphene": "#424242",
+        "ocean": "#3b3f51",
+        "palenight": "#4e5579",
+        "teal": "#37474f"
+      },
+      "SELECTION_BACKGROUND": {
+        "carbon": "#47474780",
+        "deepforest": "#4b725380",
+        "graphene": "#47474780",
+        "ocean": "#51587b80",
+        "palenight": "#555c8280",
+        "teal": "#2c545080"
+      },
+      "RECENT_LOCATIONS_SELECTION": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "FILESTATUS_COPIED": {
+        "carbon": "#a3c679",
+        "deepforest": "#c3e88d",
+        "graphene": "#c3e88d",
+        "ocean": "#c3e88d",
+        "palenight": "#c3e88d",
+        "teal": "#c3e88d"
+      },
+      "QUESTION_HINT": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "ScrollBar.Mac.Transparent.trackColor": {
+        "carbon": "#0a0a0a00",
+        "deepforest": "#11181600",
+        "graphene": "#21212100",
+        "ocean": "#0f111a00",
+        "palenight": "#292d3e00",
+        "teal": "#26323800"
+      },
+      "Scrollbar.Tabs.HoveredThumbColor": {
+        "carbon": "#eeffff33",
+        "deepforest": "#8ca59933",
+        "graphene": "#eeffff33",
+        "ocean": "#8f93a233",
+        "palenight": "#a6accd33",
+        "teal": "#eeffff33"
+      },
+      "JUPYTER.GUTTER_INPUT_EXECUTION_COUNT": {
+        "carbon": "#cd775c",
+        "deepforest": "#cc8868",
+        "graphene": "#f78c6c",
+        "ocean": "#f78c6c",
+        "palenight": "#f78c6c",
+        "teal": "#f78c6c"
+      },
+      "CONSOLE_BACKGROUND_KEY": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "BLOCK_TERMINAL_SELECTED_BLOCK_STROKE_COLOR": {
+        "carbon": "#d5b05f",
+        "deepforest": "#ffcb6b",
+        "graphene": "#ffcb6b",
+        "ocean": "#ffcb6b",
+        "palenight": "#ffcb6b",
+        "teal": "#ffcb6b"
+      },
+      "INLINE_REFACTORING_SETTINGS_DEFAULT": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "DIAGRAM_NODE_BACKGROUND": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "ScrollBar.Mac.hoverTrackColor": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "CARET_ROW_COLOR": {
+        "carbon": "#2f323766",
+        "deepforest": "#1d2b26b3",
+        "graphene": "#36363699",
+        "ocean": "#2d314399",
+        "palenight": "#373d53",
+        "teal": "#3b4a5199"
+      },
+      "BookmarkMnemonicIcon.background": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "GUTTER_BACKGROUND": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "DIAGRAM_INNER_EDGE": {
+        "carbon": "#6a90d0",
+        "deepforest": "#6fa0de",
+        "graphene": "#82aaff",
+        "ocean": "#82aaff",
+        "palenight": "#82aaff",
+        "teal": "#82aaff"
+      },
+      "DELETED_LINES_COLOR": {
+        "carbon": "#c85e604d",
+        "deepforest": "#f071784d",
+        "graphene": "#f071784d",
+        "ocean": "#f071784d",
+        "palenight": "#f071784d",
+        "teal": "#f071784d"
+      },
+      "FILESTATUS_NOT_CHANGED_RECURSIVE": {
+        "carbon": "#6a90d0",
+        "deepforest": "#6fa0de",
+        "graphene": "#82aaff",
+        "ocean": "#82aaff",
+        "palenight": "#82aaff",
+        "teal": "#82aaff"
+      },
+      "METHOD_SEPARATORS_COLOR": {
+        "carbon": "#212121",
+        "deepforest": "#2c3f39",
+        "graphene": "#424242",
+        "ocean": "#3b3f51",
+        "palenight": "#4e5579",
+        "teal": "#37474f"
+      },
+      "SOFT_WRAP_SIGN_COLOR": {
+        "carbon": "#212121b3",
+        "deepforest": "#2c3f39b3",
+        "graphene": "#424242b3",
+        "ocean": "#3b3f51b3",
+        "palenight": "#4e5579b3",
+        "teal": "#37474fb3"
+      },
+      "INDENT_GUIDE": {
+        "carbon": "#21212180",
+        "deepforest": "#2c3f3980",
+        "graphene": "#42424280",
+        "ocean": "#3b3f5180",
+        "palenight": "#4e557980",
+        "teal": "#37474f80"
+      },
+      "VISUAL_INDENT_GUIDE": {
+        "carbon": "#21212180",
+        "deepforest": "#2c3f3980",
+        "graphene": "#42424280",
+        "ocean": "#3b3f5180",
+        "palenight": "#4e557980",
+        "teal": "#37474f80"
+      },
+      "DIAGRAM_SELECTION_BOX_BORDER": {
+        "carbon": "#d5b05f",
+        "deepforest": "#ffcb6b",
+        "graphene": "#ffcb6b",
+        "ocean": "#ffcb6b",
+        "palenight": "#ffcb6b",
+        "teal": "#ffcb6b"
+      },
+      "TEARLINE_COLOR": {
+        "carbon": "#21212180",
+        "deepforest": "#2c3f3980",
+        "graphene": "#42424280",
+        "ocean": "#3b3f5180",
+        "palenight": "#4e557980",
+        "teal": "#37474f80"
+      },
+      "BLOCK_TERMINAL_GENERATE_COMMAND_PLACEHOLDER_FOREGROUND": {
+        "carbon": "#a178c4",
+        "deepforest": "#a68dcd",
+        "graphene": "#c792ea",
+        "ocean": "#c792ea",
+        "palenight": "#c792ea",
+        "teal": "#c792ea"
+      },
+      "BLOCK_TERMINAL_SELECTED_BLOCK_BACKGROUND": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "FILESTATUS_modifiedOutside": {
+        "carbon": "#6a90d0",
+        "deepforest": "#6fa0de",
+        "graphene": "#82aaff",
+        "ocean": "#82aaff",
+        "palenight": "#82aaff",
+        "teal": "#82aaff"
+      },
+      "BLOCK_TERMINAL_BLOCK_BACKGROUND_END": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "ScrollBar.Mac.thumbColor": {
+        "carbon": "#eeffff1a",
+        "deepforest": "#8ca5991a",
+        "graphene": "#eeffff1a",
+        "ocean": "#8f93a21a",
+        "palenight": "#a6accd1a",
+        "teal": "#eeffff1a"
+      },
+      "ScrollBar.Mac.Transparent.hoverTrackColor": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "Scrollbar.Tabs.TransparentThumbColor": {
+        "carbon": "#eeffff1a",
+        "deepforest": "#8ca5991a",
+        "graphene": "#eeffff1a",
+        "ocean": "#8f93a21a",
+        "palenight": "#a6accd1a",
+        "teal": "#eeffff1a"
+      },
+      "DIAGRAM_NOTE_BACKGROUND": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "DIAGRAM_GENERALIZATION_EDGE": {
+        "carbon": "#d5b05f",
+        "deepforest": "#ffcb6b",
+        "graphene": "#ffcb6b",
+        "ocean": "#ffcb6b",
+        "palenight": "#ffcb6b",
+        "teal": "#ffcb6b"
+      },
+      "DIAGRAM_SELECTION_BOX_BACKGROUND": {
+        "carbon": "#47474780",
+        "deepforest": "#4b725380",
+        "graphene": "#47474780",
+        "ocean": "#51587b80",
+        "palenight": "#555c8280",
+        "teal": "#2c545080"
+      },
+      "STICKY_LINES_BACKGROUND": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "DIAGRAM_HIGHLIGHTED_NODE_BORDER": {
+        "carbon": "#9e6fa1",
+        "deepforest": "#9c7ea1",
+        "graphene": "#bb80b3",
+        "ocean": "#bb80b3",
+        "palenight": "#bb80b3",
+        "teal": "#bb80b3"
+      },
+      "BLOCK_TERMINAL_DEFAULT_BACKGROUND": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "GRID_STRIPE_COLOR": {
+        "carbon": "#2f323780",
+        "deepforest": "#2c3f3980",
+        "graphene": "#42424280",
+        "ocean": "#80869e80",
+        "palenight": "#4e557980",
+        "teal": "#65737e80"
+      },
+      "LINE_NUMBERS_COLOR": {
+        "carbon": "#2f3237",
+        "deepforest": "#2c3f39",
+        "graphene": "#424242",
+        "ocean": "#36394a",
+        "palenight": "#474d6c",
+        "teal": "#465a64"
+      },
+      "MnemonicIcon.borderColor": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "JUPYTER.CELL_UNDER_CARET_COMMAND_MODE_STRIPE_COLOR": {
+        "carbon": "#d5b05f",
+        "deepforest": "#ffcb6b",
+        "graphene": "#ffcb6b",
+        "ocean": "#ffcb6b",
+        "palenight": "#ffcb6b",
+        "teal": "#ffcb6b"
+      },
+      "ScrollBar.Transparent.trackColor": {
+        "carbon": "#0a0a0a00",
+        "deepforest": "#11181600",
+        "graphene": "#21212100",
+        "ocean": "#0f111a00",
+        "palenight": "#292d3e00",
+        "teal": "#26323800"
+      },
+      "FILESTATUS_MODIFIED": {
+        "carbon": "#6a90d0",
+        "deepforest": "#6fa0de",
+        "graphene": "#82aaff",
+        "ocean": "#82aaff",
+        "palenight": "#82aaff",
+        "teal": "#82aaff"
+      },
+      "FILESTATUS_ADDED": {
+        "carbon": "#a3c679",
+        "deepforest": "#c3e88d",
+        "graphene": "#c3e88d",
+        "ocean": "#c3e88d",
+        "palenight": "#c3e88d",
+        "teal": "#c3e88d"
+      },
+      "INFORMATION_HINT": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "DIAGRAM_DEFAULT_EDGE": {
+        "carbon": "#eeffff",
+        "deepforest": "#d9ffe3",
+        "graphene": "#eeffff",
+        "ocean": "#eeffff",
+        "palenight": "#eeffff",
+        "teal": "#eeffff"
+      },
+      "ScrollBar.trackColor": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "FILESTATUS_HIJACKED": {
+        "carbon": "#d5b05f",
+        "deepforest": "#ffcb6b",
+        "graphene": "#ffcb6b",
+        "ocean": "#ffcb6b",
+        "palenight": "#ffcb6b",
+        "teal": "#ffcb6b"
+      },
+      "FILESTATUS_IDEA_FILESTATUS_IGNORED": {
+        "carbon": "#2f3237",
+        "deepforest": "#2c3f39",
+        "graphene": "#424242",
+        "ocean": "#80869e80",
+        "palenight": "#4e5579",
+        "teal": "#65737e"
+      },
+      "MnemonicIcon.background": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "SELECTED_INDENT_GUIDE": {
+        "carbon": "#21212180",
+        "deepforest": "#2c3f3980",
+        "graphene": "#42424280",
+        "ocean": "#3b3f5180",
+        "palenight": "#4e557980",
+        "teal": "#37474f80"
+      },
+      "JUPYTER.PROGRESS_STATUS_RUNNING_COLOR": {
+        "carbon": "#d5b05f",
+        "deepforest": "#ffcb6b",
+        "graphene": "#ffcb6b",
+        "ocean": "#ffcb6b",
+        "palenight": "#ffcb6b",
+        "teal": "#ffcb6b"
+      },
+      "ScrollBar.thumbColor": {
+        "carbon": "#eeffff1a",
+        "deepforest": "#8ca5991a",
+        "graphene": "#eeffff1a",
+        "ocean": "#8f93a21a",
+        "palenight": "#a6accd1a",
+        "teal": "#eeffff1a"
+      },
+      "DIFF_SEPARATORS_TOP_BORDER": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "ScrollBar.Transparent.hoverTrackColor": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "FILESTATUS_NOT_CHANGED_IMMEDIATE": {
+        "carbon": "#6a90d0",
+        "deepforest": "#6fa0de",
+        "graphene": "#82aaff",
+        "ocean": "#82aaff",
+        "palenight": "#82aaff",
+        "teal": "#82aaff"
+      },
+      "DIAGRAM_PORT": {
+        "carbon": "#d9d9d91a",
+        "deepforest": "#cae5d51a",
+        "graphene": "#d9d9d91a",
+        "ocean": "#ced1e31a",
+        "palenight": "#ced1e31a",
+        "teal": "#d8dfdf1a"
+      },
+      "Bookmark.Mnemonic.iconBackground": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "MODIFIED_LINES_COLOR": {
+        "carbon": "#6a90d04d",
+        "deepforest": "#6fa0de4d",
+        "graphene": "#82aaff4d",
+        "ocean": "#82aaff4d",
+        "palenight": "#82aaff4d",
+        "teal": "#82aaff4d"
+      },
+      "ScrollBar.Transparent.hoverThumbColor": {
+        "carbon": "#eeffff33",
+        "deepforest": "#8ca59933",
+        "graphene": "#eeffff33",
+        "ocean": "#8f93a233",
+        "palenight": "#a6accd33",
+        "teal": "#eeffff33"
+      },
+      "FILESTATUS_OBSOLETE": {
+        "carbon": "#d5b05f",
+        "deepforest": "#ffcb6b",
+        "graphene": "#ffcb6b",
+        "ocean": "#ffcb6b",
+        "palenight": "#ffcb6b",
+        "teal": "#ffcb6b"
+      },
+      "WHITESPACES": {
+        "carbon": "#2f3237",
+        "deepforest": "#2c3f39",
+        "graphene": "#424242",
+        "ocean": "#80869e80",
+        "palenight": "#4e5579",
+        "teal": "#65737e"
+      },
+      "DIAGRAM_FINE_GRID": {
+        "carbon": "#212121b3",
+        "deepforest": "#2c3f39b3",
+        "graphene": "#424242b3",
+        "ocean": "#3b3f51b3",
+        "palenight": "#4e5579b3",
+        "teal": "#37474fb3"
+      },
+      "DIAGRAM_NOTE_BORDER": {
+        "carbon": "#eeffff",
+        "deepforest": "#d9ffe3",
+        "graphene": "#eeffff",
+        "ocean": "#eeffff",
+        "palenight": "#eeffff",
+        "teal": "#eeffff"
+      },
+      "ScrollBar.Mac.trackColor": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "ScrollBar.hoverThumbColor": {
+        "carbon": "#eeffff33",
+        "deepforest": "#8ca59933",
+        "graphene": "#eeffff33",
+        "ocean": "#8f93a233",
+        "palenight": "#a6accd33",
+        "teal": "#eeffff33"
+      },
+      "ScrollBar.Mac.Transparent.hoverThumbColor": {
+        "carbon": "#eeffff33",
+        "deepforest": "#8ca59933",
+        "graphene": "#eeffff33",
+        "ocean": "#8f93a233",
+        "palenight": "#a6accd33",
+        "teal": "#eeffff33"
+      },
+      "ScrollBar.Mac.Transparent.thumbColor": {
+        "carbon": "#eeffff1a",
+        "deepforest": "#8ca5991a",
+        "graphene": "#eeffff1a",
+        "ocean": "#8f93a21a",
+        "palenight": "#a6accd1a",
+        "teal": "#eeffff1a"
+      },
+      "SELECTED_TEARLINE_COLOR": {
+        "carbon": "#d5b05f",
+        "deepforest": "#ffcb6b",
+        "graphene": "#ffcb6b",
+        "ocean": "#ffcb6b",
+        "palenight": "#ffcb6b",
+        "teal": "#ffcb6b"
+      },
+      "SEPARATOR_BELOW_COLOR": {
+        "carbon": "#212121b3",
+        "deepforest": "#2c3f39b3",
+        "graphene": "#424242b3",
+        "ocean": "#3b3f51b3",
+        "palenight": "#4e5579b3",
+        "teal": "#37474fb3"
+      },
+      "ScrollBar.hoverTrackColor": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "DIAGRAM_ANNOTATION_EDGE": {
+        "carbon": "#a178c4",
+        "deepforest": "#a68dcd",
+        "graphene": "#c792ea",
+        "ocean": "#c792ea",
+        "palenight": "#c792ea",
+        "teal": "#c792ea"
+      },
+      "HTML_TAG_TREE_LEVEL3": {
+        "carbon": "#6ebad7",
+        "deepforest": "#74c9de",
+        "graphene": "#89ddff",
+        "ocean": "#89ddff",
+        "palenight": "#89ddff",
+        "teal": "#89ddff"
+      },
+      "ScrollBar.Mac.hoverThumbColor": {
+        "carbon": "#eeffff33",
+        "deepforest": "#8ca59933",
+        "graphene": "#eeffff33",
+        "ocean": "#8f93a233",
+        "palenight": "#a6accd33",
+        "teal": "#eeffff33"
+      },
+      "FILESTATUS_SUPPRESSED": {
+        "carbon": "#45454a",
+        "deepforest": "#3b544d",
+        "graphene": "#545454",
+        "ocean": "#464b5d",
+        "palenight": "#676e95",
+        "teal": "#546e7a"
+      },
+      "ScrollBar.Transparent.thumbColor": {
+        "carbon": "#eeffff1a",
+        "deepforest": "#8ca5991a",
+        "graphene": "#eeffff1a",
+        "ocean": "#8f93a21a",
+        "palenight": "#a6accd1a",
+        "teal": "#eeffff1a"
+      },
+      "DIAGRAM_REALIZATION_EDGE": {
+        "carbon": "#c85e60",
+        "deepforest": "#f07178",
+        "graphene": "#f07178",
+        "ocean": "#f07178",
+        "palenight": "#f07178",
+        "teal": "#f07178"
+      },
+      "BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_STROKE_COLOR": {
+        "carbon": "#d5b05fbf",
+        "deepforest": "#ffcb6bbf",
+        "graphene": "#ffcb6bbf",
+        "ocean": "#ffcb6bbf",
+        "palenight": "#ffcb6bbf",
+        "teal": "#ffcb6bbf"
+      },
+      "NOT_CHANGED": {
+        "carbon": "#494b50",
+        "deepforest": "#446058",
+        "graphene": "#616161",
+        "ocean": "#4b526d",
+        "palenight": "#676e95",
+        "teal": "#546e7a"
+      },
+      "HTML_TAG_TREE_LEVEL1": {
+        "carbon": "#d5b05f",
+        "deepforest": "#ffcb6b",
+        "graphene": "#ffcb6b",
+        "ocean": "#ffcb6b",
+        "palenight": "#ffcb6b",
+        "teal": "#ffcb6b"
+      },
+      "DIAGRAM_BEND_SELECTION": {
+        "carbon": "#a3c679",
+        "deepforest": "#c3e88d",
+        "graphene": "#c3e88d",
+        "ocean": "#c3e88d",
+        "palenight": "#c3e88d",
+        "teal": "#c3e88d"
+      },
+      "BookmarkMnemonicIcon.borderColor": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "HTML_TAG_TREE_LEVEL5": {
+        "carbon": "#a178c4",
+        "deepforest": "#a68dcd",
+        "graphene": "#c792ea",
+        "ocean": "#c792ea",
+        "palenight": "#c792ea",
+        "teal": "#c792ea"
+      },
+      "DIAGRAM_SELECTED_NODE_BORDER": {
+        "carbon": "#d5b05f",
+        "deepforest": "#ffcb6b",
+        "graphene": "#ffcb6b",
+        "ocean": "#ffcb6b",
+        "palenight": "#ffcb6b",
+        "teal": "#ffcb6b"
+      },
+      "FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_BOTH_CONFLICTS": {
+        "carbon": "#cd775c",
+        "deepforest": "#cc8868",
+        "graphene": "#f78c6c",
+        "ocean": "#f78c6c",
+        "palenight": "#f78c6c",
+        "teal": "#f78c6c"
+      },
+      "LINE_NUMBER_ON_CARET_ROW_COLOR": {
+        "carbon": "#2f3237",
+        "deepforest": "#2c3f39",
+        "graphene": "#424242",
+        "ocean": "#36394a",
+        "palenight": "#474d6c",
+        "teal": "#465a64"
+      },
+      "Bookmark.iconBackground": {
+        "carbon": "#d5b05f",
+        "deepforest": "#ffcb6b",
+        "graphene": "#ffcb6b",
+        "ocean": "#ffcb6b",
+        "palenight": "#ffcb6b",
+        "teal": "#ffcb6b"
+      },
+      "INLINE_REFACTORING_SETTINGS_HOVERED": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "DIAGRAM_EDGE_SELECTION": {
+        "carbon": "#cd775c",
+        "deepforest": "#cc8868",
+        "graphene": "#f78c6c",
+        "ocean": "#f78c6c",
+        "palenight": "#f78c6c",
+        "teal": "#f78c6c"
+      },
+      "FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL": {
+        "carbon": "#a3c679",
+        "deepforest": "#c3e88d",
+        "graphene": "#c3e88d",
+        "ocean": "#c3e88d",
+        "palenight": "#c3e88d",
+        "teal": "#c3e88d"
+      },
+      "ADDED_LINES_COLOR": {
+        "carbon": "#a3c6794d",
+        "deepforest": "#c3e88d4d",
+        "graphene": "#c3e88d4d",
+        "ocean": "#c3e88d4d",
+        "palenight": "#c3e88d4d",
+        "teal": "#c3e88d4d"
+      },
+      "DIAGRAM_HOT_SPOTS": {
+        "carbon": "#d5b05f",
+        "deepforest": "#ffcb6b",
+        "graphene": "#ffcb6b",
+        "ocean": "#ffcb6b",
+        "palenight": "#ffcb6b",
+        "teal": "#ffcb6b"
+      },
+      "PROMOTION_PANE": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "Scrollbar.Tabs.ThumbColor": {
+        "carbon": "#eeffff1a",
+        "deepforest": "#8ca5991a",
+        "graphene": "#eeffff1a",
+        "ocean": "#8f93a21a",
+        "palenight": "#a6accd1a",
+        "teal": "#eeffff1a"
+      },
+      "DIAGRAM_BAD_EDGE": {
+        "carbon": "#c85e60",
+        "deepforest": "#f07178",
+        "graphene": "#f07178",
+        "ocean": "#f07178",
+        "palenight": "#f07178",
+        "teal": "#f07178"
+      },
+      "DIAGRAM_SNAPPING_LINES": {
+        "carbon": "#d5b05f",
+        "deepforest": "#ffcb6b",
+        "graphene": "#ffcb6b",
+        "ocean": "#ffcb6b",
+        "palenight": "#ffcb6b",
+        "teal": "#ffcb6b"
+      },
+      "NOTIFICATION_BACKGROUND": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "Adaptive.background": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "BLOCK_TERMINAL_BLOCK_BACKGROUND_START": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM": {
+        "carbon": "#c85e60cc",
+        "deepforest": "#f07178cc",
+        "graphene": "#f07178cc",
+        "ocean": "#f07178cc",
+        "palenight": "#f07178cc",
+        "teal": "#f07178cc"
+      },
+      "FILESTATUS_IDEA_FILESTATUS_MERGED_WITH_PROPERTY_CONFLICTS": {
+        "carbon": "#cd775c",
+        "deepforest": "#cc8868",
+        "graphene": "#f78c6c",
+        "ocean": "#f78c6c",
+        "palenight": "#f78c6c",
+        "teal": "#f78c6c"
+      },
+      "DIFF_SEPARATOR_WAVE": {
+        "carbon": "#45454a",
+        "deepforest": "#3b544d",
+        "graphene": "#545454",
+        "ocean": "#464b5d",
+        "palenight": "#676e95",
+        "teal": "#546e7a"
+      },
+      "JUPYTER.CARET_ROW_COLOR": {
+        "carbon": "#2f323799",
+        "deepforest": "#1d2b2699",
+        "graphene": "#36363699",
+        "ocean": "#2d314399",
+        "palenight": "#373d5399",
+        "teal": "#3b4a5199"
+      },
+      "WHITESPACES_MODIFIED_LINES_COLOR": {
+        "carbon": "#2f3237",
+        "deepforest": "#2c3f39",
+        "graphene": "#424242",
+        "ocean": "#80869e80",
+        "palenight": "#4e5579",
+        "teal": "#65737e"
+      },
+      "FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED": {
+        "carbon": "#2f3237",
+        "deepforest": "#2c3f39",
+        "graphene": "#424242",
+        "ocean": "#80869e80",
+        "palenight": "#4e5579",
+        "teal": "#65737e"
+      },
+      "DIAGRAM_BEND": {
+        "carbon": "#90a9bc",
+        "deepforest": "#95bbbd",
+        "graphene": "#b2ccd6",
+        "ocean": "#b2ccd6",
+        "palenight": "#b2ccd6",
+        "teal": "#b2ccd6"
+      },
+      "BookmarkIcon.background": {
+        "carbon": "#d5b05f",
+        "deepforest": "#ffcb6b",
+        "graphene": "#ffcb6b",
+        "ocean": "#ffcb6b",
+        "palenight": "#ffcb6b",
+        "teal": "#ffcb6b"
+      },
+      "DOCUMENTATION_COLOR": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "FILESTATUS_DELETED": {
+        "carbon": "#c85e60",
+        "deepforest": "#f07178",
+        "graphene": "#f07178",
+        "ocean": "#f07178",
+        "palenight": "#f07178",
+        "teal": "#f07178"
+      },
+      "LOOKUP_COLOR": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "HTML_TAG_TREE_LEVEL2": {
+        "carbon": "#a3c679",
+        "deepforest": "#c3e88d",
+        "graphene": "#c3e88d",
+        "ocean": "#c3e88d",
+        "palenight": "#c3e88d",
+        "teal": "#c3e88d"
+      },
+      "BLOCK_TERMINAL_ERROR_BLOCK_STROKE_COLOR": {
+        "carbon": "#c85e60",
+        "deepforest": "#f07178",
+        "graphene": "#f07178",
+        "ocean": "#f07178",
+        "palenight": "#f07178",
+        "teal": "#f07178"
+      },
+      "RIGHT_MARGIN_COLOR": {
+        "carbon": "#21212180",
+        "deepforest": "#2c3f3980",
+        "graphene": "#42424280",
+        "ocean": "#3b3f5180",
+        "palenight": "#4e557980",
+        "teal": "#37474f80"
+      },
+      "BLOCK_TERMINAL_PROMPT_SEPARATOR_COLOR": {
+        "carbon": "#212121",
+        "deepforest": "#2c3f39",
+        "graphene": "#424242",
+        "ocean": "#3b3f51",
+        "palenight": "#4e5579",
+        "teal": "#37474f"
+      },
+      "DOC_COMMENT_GUIDE": {
+        "carbon": "#212121b3",
+        "deepforest": "#2c3f39b3",
+        "graphene": "#424242b3",
+        "ocean": "#3b3f51b3",
+        "palenight": "#4e5579b3",
+        "teal": "#37474fb3"
+      },
+      "INLINE_REFACTORING_SETTINGS_FOCUSED": {
+        "carbon": "#212121",
+        "deepforest": "#2c3f39",
+        "graphene": "#424242",
+        "ocean": "#3b3f51",
+        "palenight": "#4e5579",
+        "teal": "#37474f"
+      },
+      "DIFF_SEPARATORS_BACKGROUND": {
+        "carbon": "#0a0a0a",
+        "deepforest": "#111816",
+        "graphene": "#212121",
+        "ocean": "#0f111a",
+        "palenight": "#292d3e",
+        "teal": "#263238"
+      },
+      "BLOCK_TERMINAL_INACTIVE_SELECTED_BLOCK_BACKGROUND": {
+        "carbon": "#212121",
+        "deepforest": "#2c3f39",
+        "graphene": "#424242",
+        "ocean": "#3b3f51",
+        "palenight": "#4e5579",
+        "teal": "#37474f"
+      },
+      "HTML_TAG_TREE_LEVEL0": {
+        "carbon": "#c85e60",
+        "deepforest": "#f07178",
+        "graphene": "#f07178",
+        "ocean": "#f07178",
+        "palenight": "#f07178",
+        "teal": "#f07178"
+      }
+    },
+    "attributes": {}
+  }
+}

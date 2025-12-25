@@ -1,0 +1,246 @@
+{
+  "json": {
+    "colors": {
+      "border": "#ffffff0f"
+    },
+    "ui": {},
+    "icons": {}
+  },
+  "xml": {
+    "colors": {
+      "CARET_COLOR": "#ffcc00",
+      "FOLDED_TEXT_BORDER_COLOR": "",
+      "Adaptive.accent": "#80cbc4",
+      "Bookmark.Mnemonic.iconForeground": "#ffffff",
+      "BookmarkMnemonicIcon.foreground": "#ffffff",
+      "DIAGRAM_NODE_HEADER": "#292929",
+      "DIAGRAM_NODE_SLOPPY_BACKGROUND": "#3f3f3f",
+      "DIAGRAM_NOTE_SLOPPY_BACKGROUND": "#3f3f3f",
+      "DOC_COMMENT_LINK": "#80cbc4",
+      "FILESTATUS_MERGED": "",
+      "FILESTATUS_changelistConflict": "",
+      "FILESTATUS_SWITCHED": "",
+      "JUPYTER.CODE_CELL_BACKGROUND": "#292929",
+      "JUPYTER.GUTTER_OUTPUT_EXECUTION_COUNT": "#80cbc4",
+      "JUPYTER.SAUSAGE_BUTTON_BORDER_COLOR": "#292929",
+      "JUPYTER.SAUSAGE_BUTTON_SHORTCUT_COLOR": "#727272",
+      "MODIFIED_TAB_ICON": "#80cbc4",
+      "MnemonicIcon.foreground": "#ffffff",
+      "SELECTION_FOREGROUND": "#ffffff",
+      "TAB_UNDERLINE": "#80cbc4",
+      "TAB_UNDERLINE_INACTIVE": "#80cbc4bf",
+      "ANNOTATIONS_COLOR": "#ffffff",
+      "VCS_ANNOTATIONS_COLOR_1": "#654d48",
+      "VCS_ANNOTATIONS_COLOR_2": "#446574",
+      "VCS_ANNOTATIONS_COLOR_3": "#53495d",
+      "VCS_ANNOTATIONS_COLOR_4": "#556952",
+      "VCS_ANNOTATIONS_COLOR_5": "#7b6e4c",
+      "BLOCK_TERMINAL_GENERATE_COMMAND_CARET_COLOR": "#ffcc00"
+    },
+    "attributes": {
+      "CTRL_CLICKABLE": {
+        "FOREGROUND": "#80cbc4",
+        "EFFECT_COLOR": "#80cbc4",
+        "EFFECT_TYPE": "1"
+      },
+      "DUPLICATE_FROM_SERVER": {},
+      "FOLLOWED_HYPERLINK_ATTRIBUTES": {
+        "FOREGROUND": "#80cbc4"
+      },
+      "HYPERLINK_ATTRIBUTES": {
+        "FOREGROUND": "#80cbc4",
+        "EFFECT_COLOR": "#80cbc400",
+        "EFFECT_TYPE": "1"
+      },
+      "INACTIVE_HYPERLINK_ATTRIBUTES": {
+        "EFFECT_COLOR": "#80cbc400",
+        "EFFECT_TYPE": "1"
+      },
+      "LIVE_TEMPLATE_ATTRIBUTES": {},
+      "LIVE_TEMPLATE_INACTIVE_SEGMENT": {},
+      "BLOCK_TERMINAL_CURRENT_SEARCH_ENTRY": {
+        "FOREGROUND": "#ffffff",
+        "BACKGROUND": "#ffffff"
+      },
+      "CUSTOM_KEYWORD1_ATTRIBUTES": {
+        "baseAttributes": "DEFAULT_KEYWORD"
+      },
+      "DEBUGGER_SMART_STEP_INTO_SELECTION": {
+        "baseAttributes": "LIVE_TEMPLATE_ATTRIBUTES"
+      },
+      "DEBUGGER_SMART_STEP_INTO_TARGET": {
+        "baseAttributes": "SEARCH_RESULT_ATTRIBUTES"
+      },
+      "DEFAULT_REASSIGNED_PARAMETER": {
+        "baseAttributes": "DEFAULT_PARAMETER"
+      },
+      "EXECUTIONPOINT_ATTRIBUTES": {
+        "BACKGROUND": "#32568a"
+      },
+      "INJECTED_LANGUAGE_FRAGMENT": {
+        "BACKGROUND": ""
+      },
+      "MATCHED_BRACE_ATTRIBUTES": {
+        "FONT_TYPE": "1",
+        "EFFECT_COLOR": "#ffcc00"
+      },
+      "TERMINAL_CLASS_NAME_LOG_REFERENCE": {
+        "EFFECT_TYPE": "5"
+      },
+      "TERMINAL_COMMAND_TO_RUN_USING_IDE": {},
+      "ANNOTATION_NAME_ATTRIBUTES": {
+        "baseAttributes": "DEFAULT_METADATA"
+      },
+      "BASH.HERE_DOC_END": {
+        "baseAttributes": "DEFAULT_KEYWORD"
+      },
+      "BASH.HERE_DOC_START": {
+        "baseAttributes": "DEFAULT_KEYWORD"
+      },
+      "BASH.SHEBANG": {
+        "baseAttributes": "BASH.LINE_COMMENT"
+      },
+      "CONSOLE_RANGE_TO_EXECUTE": {},
+      "Class": {
+        "baseAttributes": "CLASS_NAME_ATTRIBUTES"
+      },
+      "Closure braces": {
+        "baseAttributes": "Braces"
+      },
+      "Groovy method declaration": {
+        "baseAttributes": "METHOD_DECLARATION_ATTRIBUTES"
+      },
+      "HTML_ATTRIBUTE_VALUE": {
+        "baseAttributes": "DEFAULT_STRING"
+      },
+      "HTML_ENTITY_REFERENCE": {
+        "baseAttributes": "DEFAULT_ENTITY"
+      },
+      "HTTP_REQUEST_MESSAGE_BODY": {},
+      "HTTP_REQUEST_PARAMETER_NAME": {
+        "FONT_TYPE": "1"
+      },
+      "HTTP_REQUEST_SCRIPT": {},
+      "JS.GLOBAL_FUNCTION": {
+        "baseAttributes": "DEFAULT_FUNCTION_DECLARATION"
+      },
+      "JS.GLOBAL_VARIABLE": {
+        "baseAttributes": "DEFAULT_GLOBAL_VARIABLE"
+      },
+      "JS.INSTANCE_MEMBER_FUNCTION": {
+        "baseAttributes": "DEFAULT_INSTANCE_METHOD"
+      },
+      "JS.JSX_CLIENT_COMPONENT": {
+        "baseAttributes": "HTML_CUSTOM_TAG_NAME"
+      },
+      "JS.LOCAL_VARIABLE": {
+        "baseAttributes": "DEFAULT_LOCAL_VARIABLE"
+      },
+      "JS.REGEXP": {
+        "baseAttributes": "DEFAULT_STRING"
+      },
+      "JSP_DIRECTIVE_NAME": {
+        "baseAttributes": ""
+      },
+      "KOTLIN_BACKING_FIELD_VARIABLE": {
+        "FONT_TYPE": "1",
+        "EFFECT_TYPE": "1"
+      },
+      "KOTLIN_MUTABLE_VARIABLE": {
+        "EFFECT_TYPE": "1"
+      },
+      "KOTLIN_PACKAGE_FUNCTION_CALL": {
+        "baseAttributes": "DEFAULT_STATIC_METHOD"
+      },
+      "KOTLIN_SMART_CAST_VALUE": {},
+      "KOTLIN_TYPE_PARAMETER": {
+        "baseAttributes": "TYPE_PARAMETER_NAME_ATTRIBUTES"
+      },
+      "MARKDOWN_IMAGE": {},
+      "PROPERTIES.INVALID_STRING_ESCAPE": {
+        "baseAttributes": "DEFAULT_INVALID_STRING_ESCAPE"
+      },
+      "PROPERTIES.KEY": {
+        "baseAttributes": "DEFAULT_KEYWORD"
+      },
+      "PROPERTIES.KEY_VALUE_SEPARATOR": {
+        "baseAttributes": "DEFAULT_OPERATION_SIGN"
+      },
+      "PROPERTIES.VALID_STRING_ESCAPE": {
+        "baseAttributes": "DEFAULT_VALID_STRING_ESCAPE"
+      },
+      "REGEXP.BRACES": {
+        "baseAttributes": "DEFAULT_BRACES"
+      },
+      "REGEXP.BRACKETS": {
+        "baseAttributes": "DEFAULT_BRACKETS"
+      },
+      "REGEXP.CHAR_CLASS": {
+        "baseAttributes": "DEFAULT_ENTITY"
+      },
+      "REGEXP.ESC_CHARACTER": {
+        "baseAttributes": "DEFAULT_VALID_STRING_ESCAPE"
+      },
+      "REGEXP.META": {
+        "baseAttributes": "DEFAULT_KEYWORD"
+      },
+      "REGEXP.PARENTHS": {
+        "baseAttributes": "DEFAULT_PARENTHS"
+      },
+      "REGEXP.QUOTE_CHARACTER": {
+        "baseAttributes": "DEFAULT_VALID_STRING_ESCAPE"
+      },
+      "REGEXP.REDUNDANT_ESCAPE": {
+        "baseAttributes": "DEFAULT_VALID_STRING_ESCAPE"
+      },
+      "STATIC_FINAL_FIELD_ATTRIBUTES": {
+        "baseAttributes": "STATIC_FINAL_FIELD_IMPORTED_ATTRIBUTES"
+      },
+      "STATIC_METHOD_ATTRIBUTES": {
+        "baseAttributes": "STATIC_METHOD_IMPORTED_ATTRIBUTES"
+      },
+      "Static method access": {
+        "baseAttributes": "STATIC_METHOD_ATTRIBUTES"
+      },
+      "XML_ATTRIBUTE_NAME": {
+        "baseAttributes": "DEFAULT_ATTRIBUTE"
+      },
+      "XML_ENTITY_REFERENCE": {
+        "baseAttributes": "DEFAULT_ENTITY"
+      },
+      "XML_TAG": {
+        "baseAttributes": "DEFAULT_TAG"
+      },
+      "GO_BUILTIN_CONSTANT": {
+        "baseAttributes": "DEFAULT_CONSTANT"
+      },
+      "GO_BUILTIN_FUNCTION_CALL": {
+        "baseAttributes": "DEFAULT_FUNCTION_CALL"
+      },
+      "GO_BUILTIN_VARIABLE": {
+        "baseAttributes": "DEFAULT_GLOBAL_VARIABLE"
+      },
+      "GO_COMMENT_REFERENCE": {
+        "baseAttributes": "DEFAULT_LINE_COMMENT"
+      },
+      "GO_EXPORTED_FUNCTION_CALL": {
+        "baseAttributes": "DEFAULT_FUNCTION_CALL"
+      },
+      "GO_LOCAL_FUNCTION_CALL": {
+        "baseAttributes": "DEFAULT_FUNCTION_CALL"
+      },
+      "GO_METHOD_RECEIVER": {
+        "baseAttributes": "DEFAULT_LOCAL_VARIABLE"
+      },
+      "GO_PACKAGE": {
+        "baseAttributes": "DEFAULT_IDENTIFIER"
+      },
+      "GO_SHADOWING_VARIABLE": {
+        "baseAttributes": "DEFAULT_LOCAL_VARIABLE"
+      },
+      "TS.TYPE_PARAMETER": {
+        "baseAttributes": "TYPE_PARAMETER_NAME_ATTRIBUTES"
+      }
+    }
+  }
+}
