@@ -1,0 +1,33 @@
+ATTRIBUTION AND DISCLAIMER
+
+This project is a Neovim port of the Vira color theme for JetBrains IDEs.
+
+Original Work
+-------------
+- Theme: Vira (Carbon, Deepforest, Graphene, Ocean, Palenight, Teal variants)
+- Author: Mattia Astorino (@equinusocio)
+- Company: Vira Software
+- Website: https://vira.build/
+- Platform: JetBrains IDEs, VS Code
+- Note: Vira is the official successor to Material Theme
+
+This is an independent port of the Vira color palette to Neovim. The color
+values and design intent belong to Mattia Astorino. This project is not
+affiliated with Vira Software.
+
+JetBrains Trademarks
+--------------------
+JetBrains, IntelliJ, and related product names are trademarks of JetBrains s.r.o.
+This project is not affiliated with, endorsed by, or sponsored by JetBrains.
+
+The JetBrains theme file format documentation in this repository was derived
+from publicly available source code (IntelliJ Community Edition, Apache 2.0).
+
+Disclaimer
+----------
+This software is provided "as is" without warranty of any kind. The authors
+make no claims about the accuracy of the color reproduction or compatibility
+with any specific software.
+
+If you are the original author of the Vira theme and have concerns about this
+port, please open an issue on the GitHub repository.
