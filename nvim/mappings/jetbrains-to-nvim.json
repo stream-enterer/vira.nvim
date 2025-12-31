@@ -1,0 +1,1155 @@
+{
+  "_meta": {
+    "description": "Maps JetBrains theme attributes to Neovim highlight groups",
+    "version": "1.0",
+    "notes": {
+      "arrays": "First element is primary target, others are aliases/fallbacks",
+      "special_values": {
+        "fg": "Use FOREGROUND from attribute",
+        "bg": "Use BACKGROUND from attribute",
+        "sp": "Use EFFECT_COLOR from attribute",
+        "bold": "FONT_TYPE contains 1",
+        "italic": "FONT_TYPE contains 2",
+        "underline": "EFFECT_TYPE 1",
+        "undercurl": "EFFECT_TYPE 2",
+        "strikethrough": "EFFECT_TYPE 3"
+      }
+    }
+  },
+
+  "xml.colors": {
+    "_comment": "Editor chrome colors (157 keys)",
+
+    "core": {
+      "CARET_COLOR": ["Cursor", "lCursor", "CursorIM"],
+      "CARET_ROW_COLOR": ["CursorLine", "CursorColumn"],
+      "SELECTION_BACKGROUND": ["Visual", "VisualNOS"],
+      "SELECTION_FOREGROUND": ["Visual:fg"],
+      "LINE_NUMBERS_COLOR": ["LineNr", "LineNrAbove", "LineNrBelow"],
+      "LINE_NUMBER_ON_CARET_ROW_COLOR": ["CursorLineNr"],
+      "GUTTER_BACKGROUND": ["SignColumn", "FoldColumn"],
+      "INDENT_GUIDE": ["IblIndent", "IndentBlanklineChar"],
+      "SELECTED_INDENT_GUIDE": ["IblScope", "IndentBlanklineContextChar"],
+      "VISUAL_INDENT_GUIDE": ["IblIndent"],
+      "WHITESPACES": ["Whitespace", "NonText"],
+      "FOLDED_TEXT_BORDER_COLOR": ["Folded"],
+      "RIGHT_MARGIN_COLOR": ["ColorColumn"],
+      "TEARLINE_COLOR": ["WinSeparator", "VertSplit"],
+      "SELECTED_TEARLINE_COLOR": ["WinSeparator"],
+      "METHOD_SEPARATORS_COLOR": ["WinSeparator"],
+      "SOFT_WRAP_SIGN_COLOR": ["NonText"],
+      "STICKY_LINES_BACKGROUND": ["WinBar", "WinBarNC"],
+      "CONSOLE_BACKGROUND_KEY": ["Normal:bg"],
+      "NOTIFICATION_BACKGROUND": ["NormalFloat:bg"],
+      "DOCUMENTATION_COLOR": ["NormalFloat:bg"],
+      "LOOKUP_COLOR": ["Pmenu:bg"],
+      "RECENT_LOCATIONS_SELECTION": ["PmenuSel:bg"],
+      "INFORMATION_HINT": ["FloatBorder:bg"],
+      "QUESTION_HINT": ["Question:bg"],
+      "GRID_STRIPE_COLOR": ["CursorLine:bg"],
+      "TAB_UNDERLINE": ["TabLineSel:sp"],
+      "TAB_UNDERLINE_INACTIVE": ["TabLine:sp"],
+      "DOC_COMMENT_GUIDE": ["Comment:fg"],
+      "DOC_COMMENT_LINK": ["Underlined:fg"],
+      "Adaptive.accent": ["Special:fg"],
+      "Adaptive.background": ["Normal:bg"]
+    },
+
+    "diff": {
+      "ADDED_LINES_COLOR": ["DiffAdd:bg", "GitSignsAdd:fg", "Added:fg"],
+      "DELETED_LINES_COLOR": ["DiffDelete:bg", "GitSignsDelete:fg", "Removed:fg"],
+      "MODIFIED_LINES_COLOR": ["DiffChange:bg", "GitSignsChange:fg", "Changed:fg"],
+      "WHITESPACES_MODIFIED_LINES_COLOR": ["DiffText:bg"],
+      "DIFF_SEPARATORS_BACKGROUND": ["DiffText:bg"],
+      "DIFF_SEPARATORS_TOP_BORDER": ["DiffText:sp"],
+      "DIFF_SEPARATOR_WAVE": ["DiffText:sp"]
+    },
+
+    "file_status": {
+      "FILESTATUS_ADDED": ["GitSignsAdd:fg", "NvimTreeGitNew:fg"],
+      "FILESTATUS_MODIFIED": ["GitSignsChange:fg", "NvimTreeGitDirty:fg"],
+      "FILESTATUS_DELETED": ["GitSignsDelete:fg", "NvimTreeGitDeleted:fg"],
+      "FILESTATUS_UNKNOWN": ["NvimTreeGitNew:fg"],
+      "FILESTATUS_COPIED": ["GitSignsAdd:fg"],
+      "FILESTATUS_SUPPRESSED": ["Comment:fg"],
+      "FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED": ["Comment:fg"],
+      "FILESTATUS_IDEA_FILESTATUS_IGNORED": ["Comment:fg"]
+    },
+
+    "bookmarks": {
+      "Bookmark.iconBackground": ["BookmarkSign:bg"],
+      "Bookmark.Mnemonic.iconForeground": ["BookmarkSign:fg"],
+      "BookmarkIcon.background": ["BookmarkSign:bg"]
+    },
+
+    "scrollbar": {
+      "ScrollBar.thumbColor": ["ScrollbarSlider:bg"],
+      "ScrollBar.trackColor": ["ScrollbarSlider:bg"],
+      "ScrollBar.hoverThumbColor": ["ScrollbarSlider:bg"]
+    },
+
+    "html_tree": {
+      "HTML_TAG_TREE_LEVEL0": ["RainbowDelimiterRed:fg", "@rainbow.red:fg"],
+      "HTML_TAG_TREE_LEVEL1": ["RainbowDelimiterYellow:fg", "@rainbow.yellow:fg"],
+      "HTML_TAG_TREE_LEVEL2": ["RainbowDelimiterGreen:fg", "@rainbow.green:fg"],
+      "HTML_TAG_TREE_LEVEL3": ["RainbowDelimiterCyan:fg", "@rainbow.cyan:fg"],
+      "HTML_TAG_TREE_LEVEL4": ["RainbowDelimiterBlue:fg", "@rainbow.blue:fg"],
+      "HTML_TAG_TREE_LEVEL5": ["RainbowDelimiterViolet:fg", "@rainbow.violet:fg"]
+    },
+
+    "vcs": {
+      "ANNOTATIONS_COLOR": ["GitSignsCurrentLineBlame:fg"],
+      "VCS_ANNOTATIONS_COLOR_1": ["GitSignsCurrentLineBlame:fg"],
+      "VCS_ANNOTATIONS_COLOR_2": ["GitSignsCurrentLineBlame:fg"],
+      "VCS_ANNOTATIONS_COLOR_3": ["GitSignsCurrentLineBlame:fg"],
+      "VCS_ANNOTATIONS_COLOR_4": ["GitSignsCurrentLineBlame:fg"],
+      "VCS_ANNOTATIONS_COLOR_5": ["GitSignsCurrentLineBlame:fg"]
+    },
+
+    "terminal": {
+      "BLOCK_TERMINAL_DEFAULT_BACKGROUND": ["TerminalNormal:bg"],
+      "BLOCK_TERMINAL_DEFAULT_FOREGROUND": ["TerminalNormal:fg"]
+    }
+  },
+
+  "xml.attributes": {
+    "_comment": "Syntax highlighting attributes (290 keys)",
+
+    "base": {
+      "TEXT": {
+        "nvim": ["Normal"],
+        "properties": ["FOREGROUND", "BACKGROUND"]
+      }
+    },
+
+    "comments": {
+      "DEFAULT_LINE_COMMENT": {
+        "nvim": ["Comment", "@comment"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "DEFAULT_BLOCK_COMMENT": {
+        "nvim": ["Comment", "@comment"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "DEFAULT_DOC_COMMENT": {
+        "nvim": ["@comment.documentation"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "DEFAULT_DOC_COMMENT_TAG": {
+        "nvim": ["@comment.documentation", "SpecialComment"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "DEFAULT_DOC_COMMENT_TAG_VALUE": {
+        "nvim": ["@comment.documentation"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_DOC_MARKUP": {
+        "nvim": ["@comment"],
+        "properties": ["FOREGROUND"]
+      },
+      "TODO_DEFAULT_ATTRIBUTES": {
+        "nvim": ["Todo", "@comment.todo"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      }
+    },
+
+    "keywords": {
+      "DEFAULT_KEYWORD": {
+        "nvim": ["Keyword", "@keyword", "Statement"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "CUSTOM_KEYWORD1_ATTRIBUTES": {
+        "nvim": ["Keyword", "@keyword"],
+        "inherits": "DEFAULT_KEYWORD"
+      },
+      "CUSTOM_KEYWORD2_ATTRIBUTES": {
+        "nvim": ["@keyword.modifier"],
+        "properties": ["FOREGROUND"]
+      },
+      "CUSTOM_KEYWORD3_ATTRIBUTES": {
+        "nvim": ["@keyword.return"],
+        "properties": ["FOREGROUND"]
+      },
+      "CUSTOM_KEYWORD4_ATTRIBUTES": {
+        "nvim": ["@keyword.exception"],
+        "properties": ["FOREGROUND"]
+      }
+    },
+
+    "literals": {
+      "DEFAULT_STRING": {
+        "nvim": ["String", "@string"],
+        "properties": ["FOREGROUND"]
+      },
+      "CUSTOM_STRING_ATTRIBUTES": {
+        "nvim": ["String", "@string"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_NUMBER": {
+        "nvim": ["Number", "@number", "@number.float"],
+        "properties": ["FOREGROUND"]
+      },
+      "BOOLEAN_LITERAL": {
+        "nvim": ["Boolean", "@boolean"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_CONSTANT": {
+        "nvim": ["Constant", "@constant"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "DEFAULT_VALID_STRING_ESCAPE": {
+        "nvim": ["SpecialChar", "@string.escape"],
+        "properties": ["FOREGROUND"]
+      },
+      "CUSTOM_VALID_STRING_ESCAPE_ATTRIBUTES": {
+        "nvim": ["SpecialChar", "@string.escape"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_INVALID_STRING_ESCAPE": {
+        "nvim": ["Error"],
+        "properties": ["FOREGROUND", "EFFECT_COLOR"]
+      }
+    },
+
+    "identifiers": {
+      "DEFAULT_IDENTIFIER": {
+        "nvim": ["Identifier", "@variable"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_LOCAL_VARIABLE": {
+        "nvim": ["@variable", "Identifier"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_GLOBAL_VARIABLE": {
+        "nvim": ["@variable", "Identifier"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_INSTANCE_FIELD": {
+        "nvim": ["@variable.member", "@property"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_STATIC_FIELD": {
+        "nvim": ["@variable.member", "@property"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "DEFAULT_REASSIGNED_LOCAL_VARIABLE": {
+        "nvim": ["@variable"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_REASSIGNED_PARAMETER": {
+        "nvim": ["@variable.parameter"],
+        "properties": ["FOREGROUND"]
+      }
+    },
+
+    "functions": {
+      "DEFAULT_FUNCTION_DECLARATION": {
+        "nvim": ["Function", "@function"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_FUNCTION_CALL": {
+        "nvim": ["Function", "@function.call"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_STATIC_METHOD": {
+        "nvim": ["@function.method", "@function"],
+        "properties": ["FOREGROUND"]
+      },
+      "STATIC_METHOD_ATTRIBUTES": {
+        "nvim": ["@function.method", "@function"],
+        "inherits": "STATIC_METHOD_IMPORTED_ATTRIBUTES"
+      },
+      "STATIC_METHOD_IMPORTED_ATTRIBUTES": {
+        "nvim": ["@function.method", "@function"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      }
+    },
+
+    "types": {
+      "DEFAULT_CLASS_NAME": {
+        "nvim": ["Type", "@type", "@type.definition"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_CLASS_REFERENCE": {
+        "nvim": ["Type", "@type"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_INTERFACE_NAME": {
+        "nvim": ["Type", "@type", "@lsp.type.interface"],
+        "properties": ["FOREGROUND"]
+      },
+      "TYPE_PARAMETER_NAME_ATTRIBUTES": {
+        "nvim": ["@type", "@lsp.type.typeParameter"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_METADATA": {
+        "nvim": ["@attribute", "PreProc"],
+        "properties": ["FOREGROUND"]
+      },
+      "ANNOTATION_NAME_ATTRIBUTES": {
+        "nvim": ["@attribute", "PreProc"],
+        "inherits": "DEFAULT_METADATA"
+      },
+      "ANNOTATION_ATTRIBUTE_NAME_ATTRIBUTES": {
+        "nvim": ["@attribute"],
+        "properties": ["FOREGROUND"]
+      }
+    },
+
+    "operators": {
+      "DEFAULT_OPERATION_SIGN": {
+        "nvim": ["Operator", "@operator"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_DOT": {
+        "nvim": ["@punctuation.delimiter"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_COMMA": {
+        "nvim": ["@punctuation.delimiter"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_SEMICOLON": {
+        "nvim": ["@punctuation.delimiter"],
+        "properties": ["FOREGROUND"]
+      }
+    },
+
+    "brackets": {
+      "DEFAULT_BRACES": {
+        "nvim": ["@punctuation.bracket"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_BRACKETS": {
+        "nvim": ["@punctuation.bracket"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_PARENTHS": {
+        "nvim": ["@punctuation.bracket"],
+        "properties": ["FOREGROUND"]
+      },
+      "MATCHED_BRACE_ATTRIBUTES": {
+        "nvim": ["MatchParen"],
+        "properties": ["FONT_TYPE", "EFFECT_COLOR"]
+      }
+    },
+
+    "tags": {
+      "DEFAULT_TAG": {
+        "nvim": ["Tag", "@tag"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_ATTRIBUTE": {
+        "nvim": ["@tag.attribute"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_ENTITY": {
+        "nvim": ["SpecialChar", "@character.special"],
+        "properties": ["FOREGROUND"]
+      }
+    },
+
+    "errors_warnings": {
+      "ERRORS_ATTRIBUTES": {
+        "nvim": ["DiagnosticError", "DiagnosticUnderlineError"],
+        "properties": ["EFFECT_COLOR", "ERROR_STRIPE_COLOR"]
+      },
+      "WARNING_ATTRIBUTES": {
+        "nvim": ["DiagnosticWarn", "DiagnosticUnderlineWarn"],
+        "properties": ["EFFECT_COLOR"]
+      },
+      "INFO_ATTRIBUTES": {
+        "nvim": ["DiagnosticInfo", "DiagnosticUnderlineInfo"],
+        "properties": ["EFFECT_COLOR", "ERROR_STRIPE_COLOR"]
+      },
+      "GENERIC_SERVER_ERROR_OR_WARNING": {
+        "nvim": ["DiagnosticHint", "DiagnosticUnderlineHint"],
+        "properties": ["EFFECT_COLOR", "ERROR_STRIPE_COLOR"]
+      },
+      "GRAMMAR_ERROR": {
+        "nvim": ["SpellBad"],
+        "properties": ["EFFECT_COLOR"]
+      },
+      "TYPO": {
+        "nvim": ["SpellCap"],
+        "properties": ["EFFECT_COLOR"]
+      },
+      "BAD_CHARACTER": {
+        "nvim": ["Error"],
+        "properties": ["EFFECT_COLOR"]
+      },
+      "NOT_USED_ELEMENT_ATTRIBUTES": {
+        "nvim": ["DiagnosticUnnecessary"],
+        "properties": ["FOREGROUND", "ERROR_STRIPE_COLOR"]
+      },
+      "MARKED_FOR_REMOVAL_ATTRIBUTES": {
+        "nvim": ["DiagnosticDeprecated"],
+        "properties": ["EFFECT_COLOR"]
+      },
+      "WRONG_REFERENCES_ATTRIBUTES": {
+        "nvim": ["Error"],
+        "properties": ["FOREGROUND"]
+      },
+      "TEXT_STYLE_ERROR": {
+        "nvim": ["ErrorMsg"],
+        "properties": ["EFFECT_COLOR"]
+      },
+      "TEXT_STYLE_WARNING": {
+        "nvim": ["WarningMsg"],
+        "properties": ["EFFECT_COLOR"]
+      },
+      "TEXT_STYLE_SUGGESTION": {
+        "nvim": ["ModeMsg"],
+        "properties": ["EFFECT_COLOR"]
+      },
+      "RUNTIME_ERROR": {
+        "nvim": ["DiagnosticError"],
+        "properties": ["EFFECT_COLOR", "ERROR_STRIPE_COLOR"]
+      }
+    },
+
+    "search": {
+      "SEARCH_RESULT_ATTRIBUTES": {
+        "nvim": ["Search"],
+        "properties": ["BACKGROUND", "EFFECT_COLOR"]
+      },
+      "TEXT_SEARCH_RESULT_ATTRIBUTES": {
+        "nvim": ["IncSearch", "CurSearch"],
+        "properties": ["BACKGROUND", "EFFECT_COLOR", "ERROR_STRIPE_COLOR"]
+      },
+      "IDENTIFIER_UNDER_CARET_ATTRIBUTES": {
+        "nvim": ["LspReferenceText", "LspReferenceRead", "LspReferenceWrite"],
+        "properties": ["BACKGROUND", "EFFECT_COLOR"]
+      }
+    },
+
+    "diff": {
+      "DIFF_INSERTED": {
+        "nvim": ["DiffAdd", "Added"],
+        "properties": ["BACKGROUND", "ERROR_STRIPE_COLOR"]
+      },
+      "DIFF_DELETED": {
+        "nvim": ["DiffDelete", "Removed"],
+        "properties": ["BACKGROUND", "ERROR_STRIPE_COLOR"]
+      },
+      "DIFF_MODIFIED": {
+        "nvim": ["DiffChange", "Changed"],
+        "properties": ["BACKGROUND", "ERROR_STRIPE_COLOR"]
+      },
+      "DIFF_CONFLICT": {
+        "nvim": ["DiffText"],
+        "properties": ["BACKGROUND", "ERROR_STRIPE_COLOR"]
+      },
+      "DELETED_TEXT_ATTRIBUTES": {
+        "nvim": ["DiffDelete"],
+        "properties": ["FOREGROUND", "BACKGROUND", "EFFECT_COLOR"]
+      }
+    },
+
+    "links": {
+      "HYPERLINK_ATTRIBUTES": {
+        "nvim": ["Underlined", "@markup.link.url", "@string.special.url"],
+        "properties": ["FOREGROUND", "EFFECT_COLOR"]
+      },
+      "FOLLOWED_HYPERLINK_ATTRIBUTES": {
+        "nvim": ["Underlined"],
+        "properties": ["FOREGROUND"]
+      },
+      "CTRL_CLICKABLE": {
+        "nvim": ["Underlined"],
+        "properties": ["FOREGROUND", "EFFECT_COLOR"]
+      },
+      "INACTIVE_HYPERLINK_ATTRIBUTES": {
+        "nvim": ["Comment"],
+        "properties": ["EFFECT_COLOR"]
+      }
+    },
+
+    "misc": {
+      "FOLDED_TEXT_ATTRIBUTES": {
+        "nvim": ["Folded"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_TEMPLATE_LANGUAGE_COLOR": {
+        "nvim": ["@none"],
+        "properties": ["FOREGROUND"]
+      },
+      "DEFAULT_HIGHLIGHTED_REFERENCE": {
+        "nvim": ["LspReferenceText"],
+        "properties": ["FOREGROUND", "EFFECT_COLOR"]
+      },
+      "TEMPLATE_VARIABLE_ATTRIBUTES": {
+        "nvim": ["@variable"],
+        "properties": ["FOREGROUND"]
+      },
+      "STATIC_FIELD_ATTRIBUTES": {
+        "nvim": ["@constant"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "INLAY_DEFAULT": {
+        "nvim": ["LspInlayHint"],
+        "properties": ["FOREGROUND"]
+      },
+      "INLAY_TEXT_WITHOUT_BACKGROUND": {
+        "nvim": ["LspInlayHint"],
+        "properties": ["FOREGROUND"]
+      },
+      "INLINE_PARAMETER_HINT": {
+        "nvim": ["LspInlayHint"],
+        "properties": ["FOREGROUND"]
+      },
+      "INLINE_PARAMETER_HINT_CURRENT": {
+        "nvim": ["LspInlayHint"],
+        "properties": ["FOREGROUND"]
+      },
+      "INLINE_PARAMETER_HINT_HIGHLIGHTED": {
+        "nvim": ["LspInlayHint"],
+        "properties": ["FOREGROUND", "BACKGROUND"]
+      }
+    },
+
+    "rainbow_brackets": {
+      "RAINBOW_COLOR0": {
+        "nvim": ["RainbowDelimiterRed", "@rainbow.red"],
+        "properties": ["FOREGROUND"]
+      },
+      "RAINBOW_COLOR1": {
+        "nvim": ["RainbowDelimiterOrange", "@rainbow.orange"],
+        "properties": ["FOREGROUND"]
+      },
+      "RAINBOW_COLOR2": {
+        "nvim": ["RainbowDelimiterYellow", "@rainbow.yellow"],
+        "properties": ["FOREGROUND"]
+      },
+      "RAINBOW_COLOR3": {
+        "nvim": ["RainbowDelimiterGreen", "@rainbow.green"],
+        "properties": ["FOREGROUND"]
+      },
+      "RAINBOW_COLOR4": {
+        "nvim": ["RainbowDelimiterViolet", "@rainbow.violet"],
+        "properties": ["FOREGROUND"]
+      }
+    },
+
+    "html": {
+      "HTML_TAG": {
+        "nvim": ["@tag.delimiter", "@punctuation.bracket"],
+        "properties": ["FOREGROUND"]
+      },
+      "HTML_TAG_NAME": {
+        "nvim": ["@tag", "@tag.builtin"],
+        "properties": ["FOREGROUND"]
+      },
+      "HTML_CUSTOM_TAG_NAME": {
+        "nvim": ["@tag"],
+        "properties": ["FOREGROUND"]
+      },
+      "HTML_ATTRIBUTE_NAME": {
+        "nvim": ["@tag.attribute"],
+        "properties": ["FOREGROUND"]
+      },
+      "HTML_ATTRIBUTE_VALUE": {
+        "nvim": ["@string", "String"],
+        "inherits": "DEFAULT_STRING"
+      },
+      "HTML_ENTITY_REFERENCE": {
+        "nvim": ["@character.special", "SpecialChar"],
+        "inherits": "DEFAULT_ENTITY"
+      }
+    },
+
+    "xml": {
+      "XML_TAG": {
+        "nvim": ["@tag.delimiter"],
+        "inherits": "DEFAULT_TAG"
+      },
+      "XML_TAG_NAME": {
+        "nvim": ["@tag"],
+        "properties": ["FOREGROUND"]
+      },
+      "XML_CUSTOM_TAG_NAME": {
+        "nvim": ["@tag"],
+        "properties": ["FOREGROUND"]
+      },
+      "XML_ATTRIBUTE_NAME": {
+        "nvim": ["@tag.attribute"],
+        "inherits": "DEFAULT_ATTRIBUTE"
+      },
+      "XML_ENTITY_REFERENCE": {
+        "nvim": ["@character.special"],
+        "inherits": "DEFAULT_ENTITY"
+      },
+      "XML_NS_PREFIX": {
+        "nvim": ["@module", "@namespace"],
+        "properties": ["FOREGROUND"]
+      },
+      "XML_PROLOGUE": {
+        "nvim": ["@keyword.directive", "PreProc"],
+        "properties": ["FOREGROUND"]
+      }
+    },
+
+    "css": {
+      "CSS.TAG_NAME": {
+        "nvim": ["@tag.css", "@type.css"],
+        "properties": ["FOREGROUND"]
+      },
+      "CSS.CLASS_NAME": {
+        "nvim": ["@type.css", "@property.css"],
+        "properties": ["FOREGROUND"]
+      },
+      "CSS.PROPERTY_NAME": {
+        "nvim": ["@property.css"],
+        "properties": ["FOREGROUND"]
+      },
+      "CSS.PROPERTY_VALUE": {
+        "nvim": ["@string.css"],
+        "properties": ["FOREGROUND"]
+      },
+      "CSS.PSEUDO": {
+        "nvim": ["@tag.attribute.css"],
+        "properties": ["FOREGROUND"]
+      },
+      "CSS.FUNCTION": {
+        "nvim": ["@function.css"],
+        "properties": ["FOREGROUND"]
+      },
+      "CSS.URL": {
+        "nvim": ["@string.special.url.css"],
+        "properties": ["FOREGROUND"]
+      },
+      "CSS.COLOR": {
+        "nvim": ["@constant.css"],
+        "properties": ["FOREGROUND"]
+      },
+      "CSS.UNIT": {
+        "nvim": ["@number.css"],
+        "properties": ["FOREGROUND"]
+      },
+      "CSS.HASH": {
+        "nvim": ["@constant.css"],
+        "properties": ["FOREGROUND"]
+      },
+      "CSS.IDENT": {
+        "nvim": ["@variable.css"],
+        "properties": ["FOREGROUND"]
+      },
+      "CSS.ATTRIBUTE_NAME": {
+        "nvim": ["@tag.attribute.css"],
+        "properties": ["FOREGROUND"]
+      },
+      "CSS.IMPORTANT": {
+        "nvim": ["@keyword.css"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      }
+    },
+
+    "json": {
+      "JSON.PROPERTY_KEY": {
+        "nvim": ["@property.json", "@label.json"],
+        "properties": ["FOREGROUND"]
+      },
+      "JSONPATH.BOOLEAN": {
+        "nvim": ["@boolean.json"],
+        "properties": ["FOREGROUND"]
+      }
+    },
+
+    "yaml": {
+      "YAML_ANCHOR": {
+        "nvim": ["@label.yaml"],
+        "properties": ["FOREGROUND"]
+      },
+      "YAML_SCALAR_KEY": {
+        "nvim": ["@property.yaml", "@label.yaml"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "YAML_SCALAR_VALUE": {
+        "nvim": ["@string.yaml"],
+        "properties": ["FOREGROUND"]
+      },
+      "YAML_SCALAR_LIST": {
+        "nvim": ["@string.yaml"],
+        "properties": ["FOREGROUND"]
+      }
+    },
+
+    "markdown": {
+      "MARKDOWN_HEADER_LEVEL_1": {
+        "nvim": ["@markup.heading.1", "@markup.heading"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "MARKDOWN_HEADER_LEVEL_2": {
+        "nvim": ["@markup.heading.2", "@markup.heading"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "MARKDOWN_HEADER_LEVEL_3": {
+        "nvim": ["@markup.heading.3", "@markup.heading"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "MARKDOWN_HEADER_LEVEL_4": {
+        "nvim": ["@markup.heading.4", "@markup.heading"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "MARKDOWN_HEADER_LEVEL_5": {
+        "nvim": ["@markup.heading.5", "@markup.heading"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "MARKDOWN_HEADER_LEVEL_6": {
+        "nvim": ["@markup.heading.6", "@markup.heading"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "MARKDOWN_BOLD": {
+        "nvim": ["@markup.strong"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "MARKDOWN_ITALIC": {
+        "nvim": ["@markup.italic"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "MARKDOWN_CODE_BLOCK": {
+        "nvim": ["@markup.raw.block"],
+        "properties": ["FOREGROUND"]
+      },
+      "MARKDOWN_CODE_FENCE": {
+        "nvim": ["@markup.raw.block"],
+        "properties": ["FOREGROUND"]
+      },
+      "MARKDOWN_CODE_SPAN": {
+        "nvim": ["@markup.raw"],
+        "properties": ["FOREGROUND"]
+      },
+      "MARKDOWN_LINK_TEXT": {
+        "nvim": ["@markup.link.label"],
+        "properties": ["FOREGROUND"]
+      },
+      "MARKDOWN_LINK_DESTINATION": {
+        "nvim": ["@markup.link.url"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "MARKDOWN_BLOCK_QUOTE": {
+        "nvim": ["@markup.quote"],
+        "properties": ["FOREGROUND"]
+      },
+      "MARKDOWN_BLOCK_QUOTE_MARKER": {
+        "nvim": ["@markup.quote"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "MARKDOWN_LIST_ITEM": {
+        "nvim": ["@markup.list"],
+        "properties": ["FOREGROUND"]
+      },
+      "MARKDOWN_ORDERED_LIST": {
+        "nvim": ["@markup.list"],
+        "properties": ["FOREGROUND"]
+      },
+      "MARKDOWN_UNORDERED_LIST": {
+        "nvim": ["@markup.list"],
+        "properties": ["FOREGROUND"]
+      },
+      "MARKDOWN_HRULE": {
+        "nvim": ["@punctuation.special.markdown"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "MARKDOWN_INLINE_HTML": {
+        "nvim": ["@markup.raw"],
+        "properties": ["FOREGROUND"]
+      },
+      "MARKDOWN_HTML_BLOCK": {
+        "nvim": ["@markup.raw"],
+        "properties": ["FOREGROUND"]
+      },
+      "MARKDOWN_TERM": {
+        "nvim": ["@markup.heading"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      }
+    },
+
+    "javascript": {
+      "JS.FUNCTION_ARROW": {
+        "nvim": ["@punctuation.special.javascript"],
+        "properties": ["FOREGROUND"]
+      },
+      "JS.DOC_TYPE": {
+        "nvim": ["@type.javascript"],
+        "properties": ["FOREGROUND"]
+      },
+      "JS.GLOBAL_FUNCTION": {
+        "nvim": ["@function.javascript"],
+        "inherits": "DEFAULT_FUNCTION_DECLARATION"
+      },
+      "JS.GLOBAL_VARIABLE": {
+        "nvim": ["@variable.javascript"],
+        "inherits": "DEFAULT_GLOBAL_VARIABLE"
+      },
+      "JS.LOCAL_VARIABLE": {
+        "nvim": ["@variable.javascript"],
+        "inherits": "DEFAULT_LOCAL_VARIABLE"
+      },
+      "JS.INSTANCE_MEMBER_FUNCTION": {
+        "nvim": ["@function.method.javascript"],
+        "inherits": "DEFAULT_FUNCTION_CALL"
+      },
+      "JS.REGEXP": {
+        "nvim": ["@string.regexp.javascript"],
+        "inherits": "DEFAULT_STRING"
+      },
+      "JS.JSX_CLIENT_COMPONENT": {
+        "nvim": ["@tag.javascript"],
+        "inherits": "HTML_CUSTOM_TAG_NAME"
+      }
+    },
+
+    "kotlin": {
+      "KOTLIN_NAMED_ARGUMENT": {
+        "nvim": ["@variable.parameter.kotlin"],
+        "properties": ["FOREGROUND"]
+      },
+      "KOTLIN_FUNCTION_LITERAL_BRACES_AND_ARROW": {
+        "nvim": ["@punctuation.bracket.kotlin"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "KOTLIN_PACKAGE_FUNCTION_CALL": {
+        "nvim": ["@function.kotlin"],
+        "inherits": "DEFAULT_STATIC_METHOD"
+      },
+      "KOTLIN_TYPE_PARAMETER": {
+        "nvim": ["@type.kotlin"],
+        "inherits": "TYPE_PARAMETER_NAME_ATTRIBUTES"
+      },
+      "KOTLIN_VARIABLE_AS_FUNCTION": {
+        "nvim": ["@function.call.kotlin"],
+        "properties": ["FOREGROUND"]
+      },
+      "KOTLIN_VARIABLE_AS_FUNCTION_LIKE": {
+        "nvim": ["@function.call.kotlin"],
+        "properties": ["FOREGROUND"]
+      },
+      "KOTLIN_SMART_CAST_RECEIVER": {
+        "nvim": ["@variable.kotlin"],
+        "properties": ["FOREGROUND"]
+      },
+      "KOTLIN_SMART_CONSTANT": {
+        "nvim": ["@constant.kotlin"],
+        "properties": ["FOREGROUND"]
+      },
+      "KOTLIN_BACKING_FIELD_VARIABLE": {
+        "nvim": ["@variable.member.kotlin"],
+        "properties": ["FONT_TYPE"]
+      },
+      "KOTLIN_MUTABLE_VARIABLE": {
+        "nvim": ["@variable.kotlin"],
+        "properties": []
+      }
+    },
+
+    "go": {
+      "GO_BUILTIN_CONSTANT": {
+        "nvim": ["@constant.builtin.go"],
+        "inherits": "DEFAULT_CONSTANT"
+      },
+      "GO_BUILTIN_FUNCTION_CALL": {
+        "nvim": ["@function.builtin.go"],
+        "inherits": "DEFAULT_FUNCTION_CALL"
+      },
+      "GO_BUILTIN_TYPE_REFERENCE": {
+        "nvim": ["@type.builtin.go"],
+        "properties": ["FOREGROUND"]
+      },
+      "GO_BUILTIN_VARIABLE": {
+        "nvim": ["@variable.builtin.go"],
+        "inherits": "DEFAULT_GLOBAL_VARIABLE"
+      },
+      "GO_TYPE_REFERENCE": {
+        "nvim": ["@type.go"],
+        "properties": ["FOREGROUND"]
+      },
+      "GO_EXPORTED_STRUCT_REFERENCE": {
+        "nvim": ["@type.go"],
+        "properties": ["FOREGROUND"]
+      },
+      "GO_EXPORTED_FUNCTION_CALL": {
+        "nvim": ["@function.go"],
+        "inherits": "DEFAULT_FUNCTION_CALL"
+      },
+      "GO_LOCAL_FUNCTION_CALL": {
+        "nvim": ["@function.go"],
+        "inherits": "DEFAULT_FUNCTION_CALL"
+      },
+      "GO_PACKAGE": {
+        "nvim": ["@module.go"],
+        "inherits": "DEFAULT_IDENTIFIER"
+      },
+      "GO_METHOD_RECEIVER": {
+        "nvim": ["@variable.parameter.go"],
+        "inherits": "DEFAULT_LOCAL_VARIABLE"
+      },
+      "GO_SHADOWING_VARIABLE": {
+        "nvim": ["@variable.go"],
+        "inherits": "DEFAULT_LOCAL_VARIABLE"
+      },
+      "GO_COMMENT_REFERENCE": {
+        "nvim": ["@comment.go"],
+        "inherits": "DEFAULT_LINE_COMMENT"
+      }
+    },
+
+    "bash": {
+      "BASH.EXTERNAL_COMMAND": {
+        "nvim": ["@function.call.bash"],
+        "properties": ["FOREGROUND"]
+      },
+      "BASH.SUBSHELL_COMMAND": {
+        "nvim": ["@function.call.bash"],
+        "properties": ["FOREGROUND"]
+      },
+      "BASH.HERE_DOC_START": {
+        "nvim": ["@keyword.bash"],
+        "inherits": "DEFAULT_KEYWORD"
+      },
+      "BASH.HERE_DOC_END": {
+        "nvim": ["@keyword.bash"],
+        "inherits": "DEFAULT_KEYWORD"
+      },
+      "BASH.SHEBANG": {
+        "nvim": ["@keyword.directive.bash", "@comment.bash"],
+        "inherits": "DEFAULT_LINE_COMMENT"
+      }
+    },
+
+    "regexp": {
+      "REGEXP.META": {
+        "nvim": ["@keyword.regexp"],
+        "inherits": "DEFAULT_KEYWORD"
+      },
+      "REGEXP.CHAR_CLASS": {
+        "nvim": ["@character.special.regexp"],
+        "inherits": "DEFAULT_ENTITY"
+      },
+      "REGEXP.ESC_CHARACTER": {
+        "nvim": ["@string.escape.regexp"],
+        "inherits": "DEFAULT_VALID_STRING_ESCAPE"
+      },
+      "REGEXP.QUOTE_CHARACTER": {
+        "nvim": ["@string.escape.regexp"],
+        "inherits": "DEFAULT_VALID_STRING_ESCAPE"
+      },
+      "REGEXP.REDUNDANT_ESCAPE": {
+        "nvim": ["@string.escape.regexp"],
+        "inherits": "DEFAULT_VALID_STRING_ESCAPE"
+      },
+      "REGEXP.BRACES": {
+        "nvim": ["@punctuation.bracket.regexp"],
+        "inherits": "DEFAULT_BRACES"
+      },
+      "REGEXP.BRACKETS": {
+        "nvim": ["@punctuation.bracket.regexp"],
+        "inherits": "DEFAULT_BRACKETS"
+      },
+      "REGEXP.PARENTHS": {
+        "nvim": ["@punctuation.bracket.regexp"],
+        "inherits": "DEFAULT_PARENTHS"
+      }
+    },
+
+    "toml": {
+      "org.toml.BOOLEAN": {
+        "nvim": ["@boolean.toml"],
+        "properties": ["FOREGROUND"]
+      }
+    },
+
+    "terminal": {
+      "CONSOLE_NORMAL_OUTPUT": {
+        "nvim": ["TerminalNormal:fg"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_ERROR_OUTPUT": {
+        "nvim": ["TerminalError:fg", "DiagnosticError:fg"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_SYSTEM_OUTPUT": {
+        "nvim": ["TerminalNormal:fg"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_USER_INPUT": {
+        "nvim": ["TerminalNormal:fg"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "CONSOLE_BLACK_OUTPUT": {
+        "nvim": ["TerminalColor0", "TerminalBlack"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_RED_OUTPUT": {
+        "nvim": ["TerminalColor1", "TerminalRed"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_RED_BRIGHT_OUTPUT": {
+        "nvim": ["TerminalColor9", "TerminalBrightRed"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_GREEN_OUTPUT": {
+        "nvim": ["TerminalColor2", "TerminalGreen"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_GREEN_BRIGHT_OUTPUT": {
+        "nvim": ["TerminalColor10", "TerminalBrightGreen"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_YELLOW_OUTPUT": {
+        "nvim": ["TerminalColor3", "TerminalYellow"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_YELLOW_BRIGHT_OUTPUT": {
+        "nvim": ["TerminalColor11", "TerminalBrightYellow"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_BLUE_OUTPUT": {
+        "nvim": ["TerminalColor4", "TerminalBlue"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_BLUE_BRIGHT_OUTPUT": {
+        "nvim": ["TerminalColor12", "TerminalBrightBlue"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_MAGENTA_OUTPUT": {
+        "nvim": ["TerminalColor5", "TerminalMagenta"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_MAGENTA_BRIGHT_OUTPUT": {
+        "nvim": ["TerminalColor13", "TerminalBrightMagenta"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_CYAN_OUTPUT": {
+        "nvim": ["TerminalColor6", "TerminalCyan"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_CYAN_BRIGHT_OUTPUT": {
+        "nvim": ["TerminalColor14", "TerminalBrightCyan"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_WHITE_OUTPUT": {
+        "nvim": ["TerminalColor7", "TerminalWhite"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_GRAY_OUTPUT": {
+        "nvim": ["TerminalColor7"],
+        "properties": ["FOREGROUND"]
+      },
+      "CONSOLE_DARKGRAY_OUTPUT": {
+        "nvim": ["TerminalColor8"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_BLACK": {
+        "nvim": ["TerminalColor0"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_BLACK_BRIGHT": {
+        "nvim": ["TerminalColor8"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_RED": {
+        "nvim": ["TerminalColor1"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_RED_BRIGHT": {
+        "nvim": ["TerminalColor9"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_GREEN": {
+        "nvim": ["TerminalColor2"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_GREEN_BRIGHT": {
+        "nvim": ["TerminalColor10"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_YELLOW": {
+        "nvim": ["TerminalColor3"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_YELLOW_BRIGHT": {
+        "nvim": ["TerminalColor11"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_BLUE": {
+        "nvim": ["TerminalColor4"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_BLUE_BRIGHT": {
+        "nvim": ["TerminalColor12"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_MAGENTA": {
+        "nvim": ["TerminalColor5"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_MAGENTA_BRIGHT": {
+        "nvim": ["TerminalColor13"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_CYAN": {
+        "nvim": ["TerminalColor6"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_CYAN_BRIGHT": {
+        "nvim": ["TerminalColor14"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_WHITE": {
+        "nvim": ["TerminalColor7"],
+        "properties": ["FOREGROUND"]
+      },
+      "BLOCK_TERMINAL_WHITE_BRIGHT": {
+        "nvim": ["TerminalColor15"],
+        "properties": ["FOREGROUND"]
+      }
+    },
+
+    "log": {
+      "LOG_DEBUG_OUTPUT": {
+        "nvim": ["@comment.note"],
+        "properties": ["FOREGROUND"]
+      },
+      "LOG_INFO_OUTPUT": {
+        "nvim": ["DiagnosticInfo"],
+        "properties": ["FOREGROUND"]
+      },
+      "LOG_ERROR_OUTPUT": {
+        "nvim": ["DiagnosticError"],
+        "properties": ["FOREGROUND"]
+      },
+      "LOG_VERBOSE_OUTPUT": {
+        "nvim": ["Comment"],
+        "properties": ["FOREGROUND"]
+      },
+      "LOG_EXPIRED_ENTRY": {
+        "nvim": ["Comment"],
+        "properties": ["FOREGROUND"]
+      },
+      "LOG_STRING_PLACEHOLDER": {
+        "nvim": ["@string"],
+        "properties": ["FOREGROUND"]
+      }
+    },
+
+    "debugger": {
+      "EXECUTIONPOINT_ATTRIBUTES": {
+        "nvim": ["DapBreakpoint:bg", "debugPC:bg"],
+        "properties": ["BACKGROUND"]
+      },
+      "EVALUATED_EXPRESSION_ATTRIBUTES": {
+        "nvim": ["DapUIValue:bg"],
+        "properties": ["BACKGROUND"]
+      },
+      "DEBUGGER_INLINED_VALUES": {
+        "nvim": ["DapUIValue"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      },
+      "DEBUGGER_INLINED_VALUES_EXECUTION_LINE": {
+        "nvim": ["DapUIValue"],
+        "properties": ["FOREGROUND", "FONT_TYPE"]
+      }
+    }
+  }
+}

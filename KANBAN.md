@@ -76,17 +76,16 @@ nvim/lua/vira/init.lua (loadable theme)
   - Source: `intellij-community/platform/editor-ui-ex/.../TextAttributesReader.java`
   - Validation: All claims verified against IntelliJ source code
 
-- [ ] **Research Nvim highlight groups**
+- [x] **Research Nvim highlight groups**
   - Output: `nvim/docs/nvim-highlight-groups.md`
   - Content:
     - Core Vim groups (Normal, Comment, String, Keyword, etc.)
     - Treesitter captures (@keyword, @string, @function, etc.)
     - LSP semantic tokens (@lsp.type.*, @lsp.mod.*)
     - Diagnostic groups (DiagnosticError, DiagnosticWarn, etc.)
-    - Common plugin groups (Telescope*, NvimTree*, GitSigns*, etc.)
-  - Validation: File lists 100+ highlight groups with descriptions
+  - Validation: File lists 155 highlight groups with descriptions
 
-- [ ] **Create JetBrains → Nvim mapping**
+- [x] **Create JetBrains → Nvim mapping**
   - Input: `jetbrains/extracted/carbon.json`, `nvim/docs/nvim-highlight-groups.md`
   - Output: `nvim/mappings/jetbrains-to-nvim.json`
   - Format:
@@ -110,7 +109,7 @@ nvim/lua/vira/init.lua (loadable theme)
 
 ### Phase 3: Lua Generation
 
-- [ ] **Create palette generator script**
+- [x] **Create palette generator script**
   - Input: `jetbrains/extracted/{variant}.json`
   - Output: `nvim/lua/vira/palette/{variant}.lua` (6 files)
   - Format:
@@ -123,35 +122,23 @@ nvim/lua/vira/init.lua (loadable theme)
       -- ... all colors used by this variant
     }
     ```
-  - Script: `nvim/generate.py` or `nvim/generate.lua`
-  - Validation: `lua -e "print(require('vira.palette.carbon').bg)"` outputs color
+  - Script: `nvim/generate.py`
+  - Validation: `nvim -c "lua print(require('vira.palette.carbon').bg)"` outputs `#0a0a0a`
 
-- [ ] **Create highlight group definitions**
+- [x] **Create highlight group definitions**
   - Input: `nvim/mappings/jetbrains-to-nvim.json`
   - Output: `nvim/lua/vira/groups/init.lua`
   - Content: Function that takes palette and returns highlight group table
   - Validation: No Lua syntax errors
 
-- [ ] **Create theme entry point**
+- [x] **Create theme entry point**
   - Output: `nvim/lua/vira/init.lua`
-  - Content:
-    ```lua
-    local M = {}
-    function M.setup(opts)
-      opts = opts or {}
-      local variant = opts.variant or "carbon"
-      local palette = require("vira.palette." .. variant)
-      local groups = require("vira.groups").get(palette)
-      for group, settings in pairs(groups) do
-        vim.api.nvim_set_hl(0, group, settings)
-      end
-    end
-    return M
-    ```
-  - Validation: `:lua require('vira').setup()` runs without error
+  - Content: Setup function with variant selection, transparent bg, italic comments options
+  - Extra: `nvim/colors/vira.lua` for `:colorscheme vira` support
+  - Validation: `nvim --headless -c "lua require('vira').setup()" -c "q"` exits with code 0
 
-- [ ] **Generate all 6 variant palettes**
-  - Run generator script for each variant
+- [x] **Generate all 6 variant palettes**
+  - Run: `python nvim/generate.py`
   - Validation: All 6 palette files exist and load without error
 
 ---
@@ -209,15 +196,6 @@ nvim/lua/vira/init.lua (loadable theme)
     { "user/vira.nvim", config = function() require("vira").setup() end }
     ```
   - Validation: Fresh install via lazy.nvim works
-
----
-
-## Backlog (Future)
-
-- [ ] Light theme variants (if source exists)
-- [ ] Lualine theme integration
-- [ ] Terminal emulator themes (kitty, alacritty, wezterm)
-- [ ] Export to other editors (VS Code, Sublime)
 
 ---
 
