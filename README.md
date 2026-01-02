@@ -118,6 +118,18 @@ require("vira").current()   -- "carbon"
 require("vira").switch("ocean")
 ```
 
+## JetBrains Differences
+
+Some JetBrains styling features cannot be directly replicated in Neovim:
+
+| Feature | JetBrains | Neovim Workaround |
+|---------|-----------|-------------------|
+| **Search highlight** | Black background + teal box border (EFFECT_TYPE 0) | Uses selection background color |
+| **LSP references** | Black background + white box border | Uses selection background color |
+| **Identifier under caret** | Boxed effect around symbol | Uses selection background color |
+
+The original theme uses a "boxed" effect (colored border around text) for search results and symbol references. Since Neovim's highlight system doesn't support box borders around inline text, we use the selection background color instead, which provides consistent visibility across all variants.
+
 ## Acknowledgments
 
 This is an independent port of the [Vira color theme](https://vira.build/) by Mattia Astorino ([@equinusocio](https://github.com/equinusocio)). Color values and design intent belong to the original author. This project is not affiliated with Vira Software.

@@ -57,8 +57,11 @@ function M.get(p, opts)
     VisualNOS = { link = "Visual" },
 
     -- Search
-    Search = { bg = p.search },
-    IncSearch = { bg = p.incsearch, bold = true },
+    -- Note: JetBrains uses a boxed effect (border) around search results which
+    -- Neovim cannot replicate. We use selection color instead of the source's
+    -- black background + teal border combination.
+    Search = { bg = p.selection },
+    IncSearch = { bg = p.selection, bold = true },
     CurSearch = { link = "IncSearch" },
     Substitute = { bg = p.diff_change, bold = true },
 
@@ -193,9 +196,11 @@ function M.get(p, opts)
     Todo = vim.tbl_extend("force", { fg = p.todo }, todo_style),
 
     -- LSP
-    LspReferenceText = { bg = p.lsp_ref },
-    LspReferenceRead = { bg = p.lsp_ref },
-    LspReferenceWrite = { bg = p.lsp_ref, bold = true },
+    -- Note: JetBrains uses boxed effect for identifier under caret which
+    -- Neovim cannot replicate. We use selection color instead.
+    LspReferenceText = { bg = p.selection },
+    LspReferenceRead = { bg = p.selection },
+    LspReferenceWrite = { bg = p.selection, bold = true },
     LspSignatureActiveParameter = { bg = p.selection },
     LspCodeLens = { fg = p.comment },
     LspCodeLensSeparator = { fg = p.separator },
@@ -573,8 +578,8 @@ function M.get(p, opts)
 
     -- Flash
     FlashLabel = { fg = p.bg, bg = p.accent, bold = true },
-    FlashMatch = { fg = p.fg, bg = p.search },
-    FlashCurrent = { fg = p.fg, bg = p.incsearch },
+    FlashMatch = { bg = p.selection },
+    FlashCurrent = { bg = p.selection, bold = true },
     FlashBackdrop = { fg = p.comment },
 
     -- Leap
@@ -597,8 +602,8 @@ function M.get(p, opts)
     TroubleSignHint = { fg = p.hint },
 
     -- Mini
-    MiniCursorword = { bg = p.lsp_ref },
-    MiniCursorwordCurrent = { bg = p.lsp_ref },
+    MiniCursorword = { bg = p.selection },
+    MiniCursorwordCurrent = { bg = p.selection },
     MiniIndentscopeSymbol = { fg = p.accent },
     MiniIndentscopePrefix = { nocombine = true },
     MiniJump = { fg = p.bg, bg = p.accent },
@@ -639,9 +644,9 @@ function M.get(p, opts)
     Quote = { fg = p.md_quote or p.comment, italic = true },
 
     -- Illuminate
-    IlluminatedWordText = { bg = p.lsp_ref },
-    IlluminatedWordRead = { bg = p.lsp_ref },
-    IlluminatedWordWrite = { bg = p.lsp_ref },
+    IlluminatedWordText = { bg = p.selection },
+    IlluminatedWordRead = { bg = p.selection },
+    IlluminatedWordWrite = { bg = p.selection },
   }
 
   -- Terminal colors (g:terminal_color_X)
