@@ -1,0 +1,56 @@
+The colors file follows the standard Plasma color scheme file format and allows a theme to define what colors work best with its theme elements. The colors in this file can be edited with the color scheme editor available in System Settings.
+
+Make a new color scheme using the editor in System Settings -> Appearance -> Colors.
+Save it with a unique name.
+You will see the new color scheme in ~/.local/share/color-schemes/[theme-name].colors.
+Copy everything to your Plasma Style colors file except the [ColorEffects:Disabled] and [ColorEffects:Inactive] sections.
+The most common use of the colors file is to ensure that text is readable on various backgrounds.
+
+Here is a non-comprehensive list of the main color entries in the colors file that are currently actively used in a Plasma Style:
+
+[Colors:Window]
+
+ForegroundNormal: the text color applied to text on the standard background elements; maps to Theme::TextColor
+BackgroundNormal: the default background color used for items that paint a background themselves, allowing them to blend in with the theme; maps to Theme::BackgroundColor
+DecorationHover: the color used for text highlighting; maps to Theme::HighlightColor
+[Colors:Button]
+
+ForegroundNormal: the text color to use on push buttons
+ForegroundActive: the color used to tint BackgroundNormal for final button hinting color
+BackgroundNormal: the background color used for hinting buttons
+[Colors:View]
+
+ForegroundLink: the text color used for clickable links
+ForegroundVisited: the text color used for visited links
+ForegroundNormal: the text color used most non-title text in applications
+ForegroundInactive: the text color used for secondary text, like placeholders in text fields ("Search…")
+DecorationFocus: the color used for outlines revolving content panes (like Dolphin or Kate), outlines for checkboxes, and the background tint of hovered menu options.
+DecorationHover: the color used in the outline of text fields or checkboxes, or to highlight the background of tabs and menu buttons when hovered.
+[Colors:Header]
+
+ForegroundNormal: the text color used for the titlebar and headerbar
+BackgroundNormal: the background color used for the titlebar and headerbar
+[ColorsSelection]
+
+ForegroundNormal: the text color used in text fields
+BackgroundNormal: the background color used in text fields
+[Colors:Tooltip]
+
+ForegroundNormal: the primary text color used for tooltips from Plasma
+ForegroundInactive: the color used for secondary text in tooltips, such as the "Press Shift for More" text
+BackgroundNormal: the color used for the background of tooltips
+Other colors in the file may be used by individual widgets or used in the future, so you are encouraged to provide a complete color scheme file.
+
+The following colors are currently also used by individual plasmoids, which should give a good idea of additional usage patterns:
+
+[Colors:View]
+
+BackgroundNormal: used as a background color for the digital clock and the dictionary plasmoid search field.
+ForegroundNormal: used by the digital clock for most of its minute indicators and arrows, as well as the text color used in the search field of the dictionary plasmoid.
+DecorationFocus: used to outline the dictionary plasmoid search field.
+DecorationHover: used when hovering the dictionary plasmoid search field.
+[Colors:Complementary]
+
+Same roles as Colors:Window, those are used in areas such as the logout screen, the screen locker, and other areas in order for them to have independent colors compared to normal plasmoids.
+Note that some of these may end up folded back into Plasma::Theme properly at some point.
+

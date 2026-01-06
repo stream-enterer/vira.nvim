@@ -1,3 +1,23 @@
+[ColorEffects:Disabled]
+Color=0,0,0
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.5
+ContrastEffect=1
+IntensityAmount=0.1
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=false
+Color=0,0,0
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0
+ContrastEffect=0
+Enable=true
+IntensityAmount=0
+IntensityEffect=0
+
 [Colors:Button]
 BackgroundAlternate=55,60,82
 BackgroundNormal=48,53,72
@@ -113,6 +133,11 @@ ForegroundVisited=199,146,234
 [General]
 ColorScheme=Vira Palenight
 Name=Vira Palenight
+TitlebarIsAccentColored=false
+shadeSortColumn=true
+
+[KDE]
+contrast=4
 
 [WM]
 activeBackground=41,45,62

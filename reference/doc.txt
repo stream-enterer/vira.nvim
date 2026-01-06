@@ -1,0 +1,20 @@
+Detailed Description
+Plasma::Theme provides access to a common and standardized set of graphic elements stored in SVG format. This allows artists to create single packages of SVGs that will affect the look and feel of all workspace components.
+
+Plasma::Theme can also be used directly to retrieve file system paths to SVGs by name.
+
+Member Type Documentation
+enum Theme::ColorRole
+Constant	Value	Description
+Plasma::Theme::TextColor	0	The text color to be used by items resting on the background
+Plasma::Theme::BackgroundColor	1	The default background color
+Plasma::Theme::HighlightColor	2	The text highlight color to be used by items resting on the background
+Plasma::Theme::HoverColor	3	Color for hover effect on view
+Plasma::Theme::FocusColor	4	Color for focus effect on view
+Plasma::Theme::LinkColor	5	Color for clickable links
+Plasma::Theme::VisitedLinkColor	6	Color visited clickable links
+Plasma::Theme::HighlightedTextColor	7	Color contrasting with HighlightColor, to be used for instance with
+Plasma::Theme::PositiveTextColor	8	Color of foreground objects with a "positive message" connotation (usually green)
+Plasma::Theme::NeutralTextColor	9	Color of foreground objects with a "neutral message" connotation (usually yellow)
+Plasma::Theme::NegativeTextColor	10	Color of foreground objects with a "negative message" connotation (usually red)
+Plasma::Theme::DisabledTextColor (since 5.64)	11	color of disabled text

@@ -1,3 +1,23 @@
+[ColorEffects:Disabled]
+Color=0,0,0
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0.5
+ContrastEffect=1
+IntensityAmount=0.1
+IntensityEffect=2
+
+[ColorEffects:Inactive]
+ChangeSelectionColor=false
+Color=0,0,0
+ColorAmount=0
+ColorEffect=0
+ContrastAmount=0
+ContrastEffect=0
+Enable=true
+IntensityAmount=0
+IntensityEffect=0
+
 [Colors:Button]
 BackgroundAlternate=35,48,44
 BackgroundNormal=27,38,34
@@ -113,6 +133,11 @@ ForegroundVisited=166,141,205
 [General]
 ColorScheme=Vira Deepforest
 Name=Vira Deepforest
+TitlebarIsAccentColored=false
+shadeSortColumn=true
+
+[KDE]
+contrast=4
 
 [WM]
 activeBackground=17,24,22
